@@ -2,8 +2,8 @@ from rest_framework import serializers
 from doctors_app.models.specialty import Speciality
 
 class SpecialitySerializer(serializers.ModelSerializer):
-    name_en = serializers.CharField(required=False, write_only=True)
-    name_ar = serializers.CharField(required=False, write_only=True)
+    name_en = serializers.CharField(required=True, write_only=True)
+    name_ar = serializers.CharField(required=True, write_only=True)
     name = serializers.CharField(read_only=True)
 
     # Custom fields for translated choices

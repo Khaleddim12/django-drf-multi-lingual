@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware'
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -70,6 +70,25 @@ TEMPLATES = [
         },
     },
 ]
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'doctors_app.utils.exception_handler.custom_exception_handler',
+    'NON_FIELD_ERRORS_KEY': 'detail',
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ] ,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 5,
+
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '20/second',
+        'user': '20/second',
+    },
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
 
 WSGI_APPLICATION = 'project.wsgi.application'
 

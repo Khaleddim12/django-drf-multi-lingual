@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-28 15:34+0300\n"
+"POT-Creation-Date: 2025-04-29 14:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgstr "حديثي الولادة"
 
 #: .\doctors_app\models\specialty.py:12
 msgid "Geriatric"
-msgstr ""
+msgstr "جينية"
 
 #: .\doctors_app\models\specialty.py:16
 msgid "Diagnostic"
@@ -169,7 +169,7 @@ msgstr ""
 
 #: .\doctors_app\models\specialty.py:17
 msgid "Therapeutic"
-msgstr ""
+msgstr "علاجي"
 
 #: .\doctors_app\models\specialty.py:18 .\doctors_app\models\specialty.py:24
 #: .\doctors_app\models\specialty.py:30
@@ -178,7 +178,7 @@ msgstr ""
 
 #: .\doctors_app\models\specialty.py:22
 msgid "Internal"
-msgstr ""
+msgstr "داخلية"
 
 #: .\doctors_app\models\specialty.py:23
 msgid "Surgical"
@@ -190,7 +190,7 @@ msgstr ""
 
 #: .\doctors_app\models\specialty.py:28
 msgid "Organ"
-msgstr ""
+msgstr "عضوية"
 
 #: .\doctors_app\models\specialty.py:29
 msgid "Technique"
@@ -199,6 +199,58 @@ msgstr ""
 #: .\doctors_app\models\specialty.py:32
 msgid "Multidisciplinary"
 msgstr ""
+
+#: .\doctors_app\utils\exception_handler.py:11
+#: .\doctors_app\utils\exception_handler.py:55
+msgid "Bad request"
+msgstr "طلب سيئ"
+
+#: .\doctors_app\utils\exception_handler.py:16
+#, fuzzy
+#| msgid "Error: invalid input"
+msgid "Invalid input."
+msgstr "إدخال غير صالح"
+
+#: .\doctors_app\utils\exception_handler.py:21
+#: .\doctors_app\utils\exception_handler.py:64
+msgid "Unauthorized"
+msgstr ""
+
+#: .\doctors_app\utils\exception_handler.py:27
+msgid "Permission denied"
+msgstr "ليس لديك الصلاحية"
+
+#: .\doctors_app\utils\exception_handler.py:33
+msgid "Request was throttled"
+msgstr "طلبات كثيرة"
+
+#: .\doctors_app\utils\exception_handler.py:39
+#: .\doctors_app\utils\exception_handler.py:94
+#: .\doctors_app\utils\exception_handler.py:112
+msgid "Server error"
+msgstr "حدث خطأ في الخادم"
+
+#: .\doctors_app\utils\exception_handler.py:45
+#: .\doctors_app\utils\exception_handler.py:103
+msgid "Gateway timeout"
+msgstr ""
+
+#: .\doctors_app\utils\exception_handler.py:73
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: .\doctors_app\utils\exception_handler.py:82
+#, python-format
+msgid "Expected available in %d seconds."
+msgstr ""
+
+#: .\doctors_app\utils\exception_handler.py:82
+#: .\doctors_app\utils\exception_handler.py:85
+#, fuzzy
+#| msgid "Bad request"
+msgid "Too many requests"
+msgstr "طلب سيئ"
 
 #: .\venv\Lib\site-packages\click\_termui_impl.py:518
 #, python-brace-format
@@ -235,6 +287,10 @@ msgid "Got unexpected extra argument ({args})"
 msgid_plural "Got unexpected extra arguments ({args})"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\core.py:1429
 msgid "DeprecationWarning: The command {name!r} is deprecated."
@@ -262,6 +318,10 @@ msgid "Takes {nargs} values but 1 was given."
 msgid_plural "Takes {nargs} values but {len} were given."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\core.py:2778
 #, python-brace-format
@@ -344,6 +404,10 @@ msgid "Did you mean {possibility}?"
 msgid_plural "(Possible options: {possibilities})"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\exceptions.py:262
 msgid "unknown error"
@@ -370,6 +434,10 @@ msgid "Option {name!r} requires an argument."
 msgid_plural "Option {name!r} requires {nargs} arguments."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\shell_completion.py:319
 msgid "Shell completion is not supported for Bash versions older than 4.4."
@@ -398,7 +466,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\click\termui.py:243
 msgid "Error: invalid input"
-msgstr ""
+msgstr "إدخال غير صالح"
 
 #: .\venv\Lib\site-packages\click\termui.py:773
 msgid "Press any key to continue..."
@@ -416,12 +484,20 @@ msgid "{value!r} is not {choice}."
 msgid_plural "{value!r} is not one of {choices}."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\types.py:392
 msgid "{value!r} does not match the format {format}."
 msgid_plural "{value!r} does not match the formats {formats}."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\click\types.py:414
 msgid "{value!r} is not a valid {number_type}."
@@ -483,6 +559,10 @@ msgid "{len_type} values are required, but {len_value} was given."
 msgid_plural "{len_type} values are required, but {len_value} were given."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
 msgid "Messages"
@@ -597,6 +677,10 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:438
 #, python-format
@@ -608,6 +692,10 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:461
 #: .\venv\Lib\site-packages\django\forms\fields.py:347
@@ -621,6 +709,10 @@ msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:468
 #, python-format
@@ -628,6 +720,10 @@ msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:473
 #, python-format
@@ -637,6 +733,10 @@ msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:544
 #, python-format
@@ -938,7 +1038,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:91
 msgid "This field is required."
-msgstr ""
+msgstr "هذاالحقل مطلوب"
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:298
 msgid "Enter a whole number."
@@ -986,6 +1086,10 @@ msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:630
 msgid "Please either submit a file or check the clear checkbox, not both."
@@ -1046,6 +1150,10 @@ msgid "Please submit at most %(num)d form."
 msgid_plural "Please submit at most %(num)d forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:72
 #, python-format
@@ -1053,6 +1161,10 @@ msgid "Please submit at least %(num)d form."
 msgid_plural "Please submit at least %(num)d forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:484
 #: .\venv\Lib\site-packages\django\forms\formsets.py:491
@@ -1136,6 +1248,10 @@ msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:910
 #, python-format
@@ -1456,6 +1572,10 @@ msgid "%(num)d year"
 msgid_plural "%(num)d years"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:9
 #, python-format
@@ -1463,6 +1583,10 @@ msgid "%(num)d month"
 msgid_plural "%(num)d months"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:10
 #, python-format
@@ -1470,6 +1594,10 @@ msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:11
 #, python-format
@@ -1477,6 +1605,10 @@ msgid "%(num)d day"
 msgid_plural "%(num)d days"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:12
 #, python-format
@@ -1484,6 +1616,10 @@ msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:13
 #, python-format
@@ -1491,10 +1627,10 @@ msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
 msgstr[0] ""
 msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:111
-msgid "Forbidden"
-msgstr ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:112
 msgid "CSRF verification failed. Request aborted."
@@ -1681,3 +1817,9 @@ msgstr ""
 #: .\venv\Lib\site-packages\timezone_field\rest_framework.py:10
 msgid "A valid timezone is required."
 msgstr ""
+
+#~ msgid "Authentication failed"
+#~ msgstr "خطأ فشل المصادقة"
+
+#~ msgid "Not authenticated"
+#~ msgstr "لم تتم المصادقة"
