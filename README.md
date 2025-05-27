@@ -22,9 +22,9 @@
 2. Create and activate virtual environment:
    ```bash
    python -m venv venv
-    source venv/bin/activate  # Linux/Mac
-    # or 
-    venv\Scripts\activate  # Windows
+   source venv/bin/activate  # Linux/Mac
+   # or 
+   venv\Scripts\activate  # Windows
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
